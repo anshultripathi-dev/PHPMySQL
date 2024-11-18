@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Give Mr Freeze feedback!</h1>
+    <form action="submit_feedback.php" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">What is your email?</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="ice_cream">Favourite ice-cream:</label>
+        <select id="ice_cream" name="ice_cream">
+            <option value="Vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+        </select><br><br>
+
+        <label for="nut_allergy">I have a nut allergy</label>
+        <input type="checkbox" id="nut_allergy" name="nut_allergy"><br><br>
+
+        <label for="milk_allergy">I have a milk allergy</label>
+        <input type="checkbox" id="milk_allergy" name="milk_allergy"><br><br>
+
+        <label for="comments">Enter any comments here:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
